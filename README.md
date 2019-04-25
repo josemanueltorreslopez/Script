@@ -1,9 +1,10 @@
 # Script
 ## Ejercicios de Script
-### Ejer 1 Eliminacion de Directorio o archivo.
-```` #! /bin/bash
+### Ejer 1: Eliminacion de Directorio o archivo.
 
+```` 
 # Elimina un archivo o directorio pasado como parámetro, y le pregunte si está seguro de llevar a cabo la acción.
+#! /bin/bash
 
 clear
 if [ -e $1 ]
@@ -28,5 +29,33 @@ then
 	fi
 else
 	echo "No existe el fichero o el directorio dado como parametro."
+fi
+````
+
+### Ejer 2: Muestra la ayuda de un comando pasado como parametro.
+````
+# Muestra la información de un comando al ejecutar dicho script y pasar como parámetro el comando.
+#! /bin/bash
+
+clear
+$1 --help
+````
+
+### Ejer 3: Comprobacion de usuario "blas" y si es asi lo muestra 5 veces.
+````
+# Comprueba si el usuario actual del sistema es blas, si es así visualiza su nombre 5 veces, sino te despides de él amigablemente.
+#! /bin/bash
+
+clear
+usuario=`whoami`
+if [ $usuario == 'blas' ]
+then
+	echo $usuario
+	echo $usuario
+	echo $usuario
+	echo $usuario
+	echo $usuario
+else
+	echo "Nos vemos"
 fi
 ````
