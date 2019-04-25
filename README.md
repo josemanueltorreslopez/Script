@@ -1,6 +1,6 @@
 # Script
 Ejercicios de Script
-``` #! /bin/bash
+```` #! /bin/bash
 
 # Elimina un archivo o directorio pasado como parámetro, y le pregunte si está seguro de llevar a cabo la acción.
 
@@ -28,3 +28,4 @@ then
 else
 	echo "No existe el fichero o el directorio dado como parametro."
 fi
+````
