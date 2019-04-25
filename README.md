@@ -346,3 +346,6 @@ then
 		iptables -A INPUT -d $1 -j DROP
 	fi
 fi
+````
+
+### Ejer 16: Creacion de un router con un script.
