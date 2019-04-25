@@ -1,5 +1,6 @@
 # Script
-Ejercicios de Script
+## Ejercicios de Script
+### Ejer 1 Eliminacion de Directorio o archivo.
 ```` #! /bin/bash
 
 # Elimina un archivo o directorio pasado como parámetro, y le pregunte si está seguro de llevar a cabo la acción.
